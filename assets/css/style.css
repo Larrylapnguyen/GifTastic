@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Heebo:100');
+
+body {
+      margin: auto;
+      height: auto;
+      background-color: #3d3d3d;
+      font-family: 'Ubuntu', sans-serif;
+}
+
+button:hover {
+      cursor: pointer;
+}
+
+img:hover {
+      cursor: pointer;
+}
+
+.sep {
+      display: none;
+}
+
+.clear {
+      clear: both;
+}
+
+/* End Globals */
+
+/* Start Header */
+.head-box {
+      color: #ffffff;
+      padding-top: 5px;
+      background-color: #2b2929;
+      border-bottom: 2px solid #314083;
+}
+
+.head-box h1 {
+      padding: 10px;
+      margin-left: 10%;
+      text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+      float: left;
+      font-size: 5vw;
+
+}
+
+.head-box ul {
+      margin-right: 10%;
+}
+
+.head-box li {
+      float: right;
+      font-size: 30px;
+      margin-top: 15px;
+      margin-right: 2%;
+      padding-right: 25px;
+}
+
+.divider {
+      border-right: 1px solid #a8a8a87c;
+}
+
+.head-box a {
+      color: #00a2ff;
+      text-decoration: none;
+}
+
+.head-box a:hover {
+      font-weight: bolder;
+      color: #00c3ff;
+}
+
+/* End Header */
+
+/* Start Submit */
+.submit-box {
+      /* border: 1px solid green; */
+      margin-top: 1%;
+      text-align: center;
+}
+
+.text-box {
+      width: 500px;
+      height: 50px;
+      font-size: 30px;
+      font-family: 'Heebo', sans-serif;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      border: 2px solid #125ce4;
+      font-weight: 200;
+}
+
+.sub-btn {
+      width: 502px;
+      height: 40px;
+      color: #2b75ff;
+      font-size: 20px;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      margin-top: 5px;
+      font-weight: bolder;
+}
+
+.sub-btn:hover {
+      color: #fff;
+      background-color: #45a8f8;
+}
+
+.btn-box {
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+/* End Submit */
+
+/* Start Buttons */
+.btn-box {
+      margin-top: 2%;
+      text-align: center;
+      margin-bottom: 1%;
+}
+
+.gif-Btn {
+      margin: 5px;
+      border: none;
+      width: 100px;
+      height: 30px;
+      color: coral;
+      border-radius: 5px;
+      background-color: #dddcdc;
+      font-size: 17px;
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif;
+}
+
+.gif-Btn:hover {
+      background-color: coral;
+      color: #fff;
+      font-weight: normal;
+}
+
+/* End Buttons */
+
+/* Start Images */
+.border {
+      border-bottom: 2px solid #f39830;
+      margin-bottom: 10px;
+}
+
+.img-box {
+      color: #a9d6ff;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-align: center;
+}
+
+.gif-box {
+      float: left;
+      margin: 15px;
+      width: auto;
+      height: 250px;
+      text-align: center;
+
+}
+
+.gif-box figcaption {
+      font-size: 18px;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #0b2e42;
+}
+
+.gif-box {
+      border: 1px solid #2b2b2b;
+      padding-top: 5%;
+}
+
+.img-box img {
+      width: auto;
+      height: 200px;
+}
+
+.grid-container {
+      border: 1px solid #00a2ff;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* End Gifs */
+
+/* Media Queries */
+@media(max-width: 1250px) {
+      .grid-container {
+            grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media(max-width: 875px) {
+      .grid-container {
+            grid-template-columns: 1fr;
+      }
+
+      .gif-box figcaption {
+            width: 50%;
+      }
+
+      .head-box h1 {
+            margin: 0%;
+            margin-left:30%; 
+            margin-right:30%; 
+            font-size: 8vw;
+      }
+
+       .head-box li{
+            display: none;
+      }
+}
+
+@media(max-width: 663px) {
+      .head-box h1 {
+            margin: 0%;
+            margin-left:30%; 
+            margin-right:30%; 
+            font-size: 7vw;
+      }
+}
+
+@media(max-width: 480px) {}
+
+/* End Media Queries */
